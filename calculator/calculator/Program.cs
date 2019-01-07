@@ -28,7 +28,7 @@ namespace calculator
             Console.WriteLine("Select your mathematic operator (+, -, *, /)");
             string operation = Console.ReadLine();
 
-            //set up switch statement
+            //set up switch statement that uses variables as its parameters
             switch (operation)
             {
                 case "+":
@@ -45,7 +45,38 @@ namespace calculator
                     break;
             }
         }
+        
+        //addition method
+        public static void Add(double firstNumber, string operation, double secondNumber)
+        {
+            double solution = firstNumber + secondNumber;
+            Console.WriteLine(firstNumber + "+" + secondNumber + "=" + solution);
+            Console.ReadLine();
+        }
 
+        //subtraction method
+        public static void Subtract(double firstNumber, string operation, double secondNumber)
+        {
+            double solution = firstNumber - secondNumber;
+            Console.WriteLine(firstNumber + "-" + secondNumber + "=" + solution);
+            Console.ReadLine();
+        }
+
+        //multiplication method
+        public static void Multiply(double firstNumber, string operation, double secondNumber)
+        {
+            double solution = firstNumber * secondNumber;
+            Console.WriteLine(firstNumber + "*" + secondNumber + "=" + solution);
+            Console.ReadLine();
+        }
+
+        //division method
+        public static void Divide(double firstNumber, string operation, double secondNumber)
+        {
+            double solution = firstNumber / secondNumber;
+            Console.WriteLine(firstNumber + "/" + secondNumber + "=" + solution);
+            Console.ReadLine();
+        }
     }
 }
 
